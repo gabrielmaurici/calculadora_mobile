@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:text="@string/_0"
+            android:textColor="@color/blue_700"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/text_expressao"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:text="@string/_0"
+            android:textColor="@color/blue_700"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_C"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/c"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_abre_arentese"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/abreParentese"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_fecha_parentese"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/fechaParentese"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_divide"
+
+                style="@style/button_operacoes"
+                android:layout_marginBottom="2dp"
+                android:text="@string/divide"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_7"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_7"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_8"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_8"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_9"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_9"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_multiplica"
+                style="@style/button_operacoes"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_multiplica"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_4"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_4"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_5"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_5"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_6"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_6"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_diminui"
+                style="@style/button_operacoes"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_diminui"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_1"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_1"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_2"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_2"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_3"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_3"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_soma"
+                style="@style/button_operacoes"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_soma"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_0"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_0"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_ponto"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/_ponto"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_apaga"
+                style="@style/button_numeros"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/del"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/button_igual"
+                style="@style/button_operacoes"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="@color/orange_700"
+                android:text="@string/_igual"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
