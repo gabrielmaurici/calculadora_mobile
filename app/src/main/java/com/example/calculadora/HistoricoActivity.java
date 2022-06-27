@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 import context.HistoricoResultados;
 
 public class HistoricoActivity extends AppCompatActivity implements View.OnClickListener {
@@ -25,8 +28,11 @@ public class HistoricoActivity extends AppCompatActivity implements View.OnClick
 
         listViewHistoricoResultados = findViewById(R.id.lista_historico);
 
+        ArrayList<String> historico = HistoricoResultados.RetornaHistorico();
+        Collections.reverse(historico);
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                this, R.layout.texto_listview, HistoricoResultados.Historico
+                this, R.layout.texto_listview, historico
         );
 
         listViewHistoricoResultados.setAdapter(adapter);
