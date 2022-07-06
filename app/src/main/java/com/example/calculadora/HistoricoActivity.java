@@ -26,18 +26,19 @@ public class HistoricoActivity extends AppCompatActivity implements View.OnClick
 
         atribuirId(botaoVoltar, R.id.voltar);
 
-        listViewHistoricoResultados = findViewById(R.id.lista_historico);
+        listViewHistoricoResultados = findViewById(R.id.lista_historico); // Linka listView com id listView do layout
 
-        ArrayList<String> historico = HistoricoResultados.RetornaHistorico();
-        Collections.reverse(historico);
+        ArrayList<String> historico = HistoricoResultados.RetornaHistorico(); // Recupera lista de histórico de calculos
+        Collections.reverse(historico); // Classe Collections importada para uso do método reverse para listar histórico na ordem decrescente
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+        ArrayAdapter<String> adapter = new ArrayAdapter<>( // Cria adapter para setar histórico no listview com layout definido
                 this, R.layout.texto_listview, historico
         );
 
         listViewHistoricoResultados.setAdapter(adapter);
     }
 
+    // Método para atribuir o botão ao id do botão definido no layout
     void atribuirId(Button btn, int id) {
         btn = findViewById(id);
         btn.setOnClickListener(this);
