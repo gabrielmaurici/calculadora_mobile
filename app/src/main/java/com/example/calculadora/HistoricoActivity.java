@@ -38,7 +38,7 @@ public class HistoricoActivity extends AppCompatActivity implements View.OnClick
         listViewHistoricoResultados.setAdapter(adapter);
     }
 
-    // Método para atribuir o botão ao id do botão definido no layout
+    // Método para atribuir o botão ao id do botão definido no layout.
     void atribuirId(Button btn, int id) {
         btn = findViewById(id);
         btn.setOnClickListener(this);
